@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{6cc30d7d-0c0e-4ab1-9d33-f1a058833582}</ProjectGuid>
+    <RootNamespace>FCE</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;BT_THREADSAFE=1;BT_USE_DOUBLE_PRECISION;_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)FVR;$(SolutionDir)External\tinyobjloader-master;$(SolutionDir)External\glm;$(SolutionDir)External\glfw-3.3.7.bin.WIN64\include;$(SolutionDir)External\VulkanSDK\1.3.204.1\Include;$(SolutionDir)External\stb-master;%(AdditionalIncludeDirectories);$(SolutionDir)External\vk-bootstrap-master\src;$(SolutionDir)External\VulkanMemoryAllocator-master\include;$(SolutionDir)External\imgui-docking;$(SolutionDir)External\ENTT\src;$(SolutionDir)External\Bullet\src;$(SolutionDir)External\LDtkLoader\include;$(SolutionDir)FCE\Headers</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Core/FCEpch.h</PrecompiledHeaderFile>
+      <AdditionalOptions>/MP /wd4244 /wd4267 /wd26812 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>FVR.lib;glfw3.lib;vulkan-1.lib;%(AdditionalDependencies);LinearMath_x64_d.lib;BulletCollision_x64_d.lib;BulletDynamics_x64_d.lib;LDtkLoader.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)External\glfw-3.3.7.bin.WIN64\lib-vc2019;$(SolutionDir)External\VulkanSDK\1.3.204.1\Lib;%(AdditionalDependencies);$(SolutionDir)x64\Debug;$(SolutionDir)External\Bullet\Libs;$(SolutionDir)External\LDtkLoader\lib\x64_Debug</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)External\glfw-3.3.7.bin.WIN64\lib-vc2019;$(SolutionDir)External\VulkanSDK\1.3.204.1\Lib;%(AdditionalDependencies);$(SolutionDir)x64\Debug;$(SolutionDir)External\Bullet\Libs;$(SolutionDir)External\LDtkLoader\lib\x64_Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>FVR.lib;glfw3.lib;%(AdditionalDependencies);LDtkLoader.lib;Bullet3Collision_x64_d.lib;Bullet3Common_x64_d.lib;Bullet3Dynamics_x64_d.lib;LinearMath_x64_d.lib;BulletCollision_x64_d.lib;BulletDynamics_x64_d.lib;BulletSoftBody_vs2010_x64_d.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>BT_THREADSAFE=1;BT_USE_DOUBLE_PRECISION;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)FVR;$(SolutionDir)External\tinyobjloader-master;$(SolutionDir)External\glm;$(SolutionDir)External\glfw-3.3.7.bin.WIN64\include;$(SolutionDir)External\VulkanSDK\1.3.204.1\Include;$(SolutionDir)External\stb-master;%(AdditionalIncludeDirectories);$(SolutionDir)External\vk-bootstrap-master\src;$(SolutionDir)External\vk-bootstrap-master\scr;$(SolutionDir)External\VulkanMemoryAllocator-master\include;$(SolutionDir)External\imgui-docking;$(SolutionDir)External\ENTT\src;$(SolutionDir)External\Bullet\src;$(SolutionDir)External\LDtkLoader\include;$(SolutionDir)FCE\Headers</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Core/FCEpch.h</PrecompiledHeaderFile>
+      <AdditionalOptions>/MP /wd4244 /wd4267 /wd26812 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>FVR.lib;glfw3.lib;vulkan-1.lib;%(AdditionalDependencies);Bullet3Collision_x64_r.lib;Bullet3Dynamics_x64_r.lib;LinearMath_x64_r.lib;Bullet3Common_x64_r.lib;BulletCollision_x64_r.lib;BulletDynamics_x64_r.lib;LDtkLoader.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)External\glfw-3.3.7.bin.WIN64\lib-vc2019;$(SolutionDir)External\VulkanSDK\1.3.204.1\Lib;$(SolutionDir)x64\Release;%(AdditionalDependencies);$(SolutionDir)External\Bullet\Libs;$(SolutionDir)External\LDtkLoader\lib\x64_Release</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <AdditionalOptions>/NODEFAULTLIB:MSVCRT %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <Lib>
+      <AdditionalDependencies>FVR.lib;glfw3.lib;%(AdditionalDependencies);Bullet3Collision_x64_r.lib;Bullet3Common_x64_r.lib;Bullet3Dynamics_x64_r.lib;LinearMath_x64_r.lib;BulletCollision_x64_r.lib;BulletDynamics_x64_r.lib;LDtkLoader.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)External\glfw-3.3.7.bin.WIN64\lib-vc2019;$(SolutionDir)External\VulkanSDK\1.3.204.1\Lib;%(AdditionalDependencies);$(SolutionDir)x64\Release;$(SolutionDir)External\Bullet\Libs;$(SolutionDir)External\LDtkLoader\lib\x64_Release</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FVR\FVR.vcxproj">
+      <Project>{701db518-e464-4b62-b5ad-ed26b8bdab99}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\AStar.cpp" />
+    <ClCompile Include="Src\Components\LevelTransitionComponent.cpp" />
+    <ClCompile Include="Src\Components\MovementComponent.cpp" />
+    <ClCompile Include="Src\Debug\EngineTools.cpp" />
+    <ClCompile Include="Src\UI\DebugInspectable.cpp" />
+    <ClCompile Include="Src\UI\ImGuiHandler.cpp" />
+    <ClCompile Include="Src\UI\Inspectable.cpp" />
+    <ClCompile Include="Src\Maps\World.cpp" />
+    <ClCompile Include="Src\Systems\EnemySystem.cpp" />
+    <ClCompile Include="Src\Systems\InputSystem.cpp" />
+    <ClCompile Include="Src\Components\InputComponent.cpp" />
+    <ClCompile Include="Src\Debug\BulletDebugDraw.cpp" />
+    <ClCompile Include="Src\Components\CameraComponent.cpp" />
+    <ClCompile Include="Src\Components\CommonComponents.cpp" />
+    <ClCompile Include="Src\Core\Core.cpp" />
+    <ClCompile Include="Src\Core\Engine.cpp" />
+    <ClCompile Include="Src\Core\FCEpch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Src\Core\Input.cpp" />
+    <ClCompile Include="Src\Maps\Level.cpp" />
+    <ClCompile Include="Src\Systems\CameraSystem.cpp" />
+    <ClCompile Include="Src\Systems\CollisionSystem.cpp" />
+    <ClCompile Include="Src\Systems\MovementSystem.cpp" />
+    <ClCompile Include="Src\Systems\RenderSystem.cpp" />
+    <ClCompile Include="Src\Core\Timing.cpp" />
+    <ClCompile Include="Src\Voronoi.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers\AStar.h" />
+    <ClInclude Include="Headers\Debug\BulletDebugDraw.h" />
+    <ClInclude Include="Headers\Collision\CollisionTable.h" />
+    <ClInclude Include="Headers\Components\CameraComponent.h" />
+    <ClInclude Include="Headers\Components\CommonComponents.h" />
+    <ClInclude Include="Headers\Components\EnemyComponent.h" />
+    <ClInclude Include="Headers\Components\LevelTransitionComponent.h" />
+    <ClInclude Include="Headers\Components\MovementComponent.h" />
+    <ClInclude Include="Headers\Core\Core.h" />
+    <ClInclude Include="Headers\Core\Engine.h" />
+    <ClInclude Include="Headers\Core\FCEpch.h" />
+    <ClInclude Include="Headers\Core\Input.h" />
+    <ClInclude Include="Headers\Debug\EngineTools.h" />
+    <ClInclude Include="Headers\UI\DebugInspectable.h" />
+    <ClInclude Include="Headers\UI\ImGuiHandler.h" />
+    <ClInclude Include="Headers\UI\Inspectable.h" />
+    <ClInclude Include="Headers\Maps\Level.h" />
+    <ClInclude Include="Headers\Maps\World.h" />
+    <ClInclude Include="Headers\Systems\CameraSystem.h" />
+    <ClInclude Include="Headers\Systems\CollisionSystem.h" />
+    <ClInclude Include="Headers\Systems\EnemySystem.h" />
+    <ClInclude Include="Headers\Systems\MovementSystem.h" />
+    <ClInclude Include="Headers\Systems\RenderSystem.h" />
+    <ClInclude Include="Headers\Components\InputComponent.h" />
+    <ClInclude Include="Headers\Systems\InputSystem.h" />
+    <ClInclude Include="Headers\Core\Timing.h" />
+    <ClInclude Include="Headers\Voronoi.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
