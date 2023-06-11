@@ -117,7 +117,13 @@
     <ClCompile Include="Src\Voronoi.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Src\AStar.cpp">
+    <ClCompile Include="Src\StateMachine\StateMachine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\StateMachine\State.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Astar\AStar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -200,7 +206,13 @@
     <ClInclude Include="Headers\Voronoi.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Headers\AStar.h">
+    <ClInclude Include="Headers\StateMachine\State.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\StateMachine\StateMachine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Astar\AStar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

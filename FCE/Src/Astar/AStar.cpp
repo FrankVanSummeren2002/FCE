@@ -1,5 +1,5 @@
 #include "Core/FCEpch.h"
-#include "AStar.h"
+#include "Astar/AStar.h"
 #include "queue"
 #include "Core/FCEpch.h"
 #include "Core/Engine.h"
