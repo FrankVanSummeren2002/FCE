@@ -1812,7 +1812,7 @@ void FVR::VulkanRenderBackEnd::InitViewportImage()
 		imageCreateCI.mipLevels = 1;
 		imageCreateCI.initialLayout = VK_IMAGE_LAYOUT_UNDEFINED;
 		imageCreateCI.samples = VK_SAMPLE_COUNT_1_BIT;
-		imageCreateCI.tiling = VK_IMAGE_TILING_LINEAR;
+		imageCreateCI.tiling = VK_IMAGE_TILING_OPTIMAL;
 		imageCreateCI.usage = VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT | VK_IMAGE_USAGE_SAMPLED_BIT;
 		// Create the image
 		// VkImage dstImage;

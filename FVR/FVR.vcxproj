@@ -152,7 +152,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)External\tinyobjloader-master;$(SolutionDir)External\glm;$(SolutionDir)External\glfw-3.3.7.bin.WIN64\include;$(SolutionDir)External\VulkanSDK\1.3.204.1\Include;$(SolutionDir)External\stb-master;$(SolutionDir)External\vk-bootstrap-master\src;$(SolutionDir)External\VulkanMemoryAllocator-master\include;$(SolutionDir)\FVR\Src;$(SolutionDir)\FVR\Header;$(SolutionDir)External\imgui-docking;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)External\tinyobjloader-master;$(SolutionDir)External\glm;$(SolutionDir)External\glfw-3.3.7.bin.WIN64\include;C:\VulkanSDK\1.3.204.1\Include;$(SolutionDir)External\stb-master;$(SolutionDir)External\vk-bootstrap-master\src;$(SolutionDir)External\VulkanMemoryAllocator-master\include;$(SolutionDir)\FVR\Src;$(SolutionDir)\FVR\Header;$(SolutionDir)External\imgui-docking;$(SolutionDir)External\imgui-docking\imgui-docking;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalOptions>/wd26812 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -177,7 +177,7 @@
     </CustomBuildStep>
     <Lib>
       <AdditionalDependencies>vulkan-1.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)External\VulkanSDK\1.3.204.1\Lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\VulkanSDK\1.3.204.1\Lib</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

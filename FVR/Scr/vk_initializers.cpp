@@ -725,7 +725,7 @@ uint32_t FVR::vkInit::FindMemoryType(uint32_t typeFilter, VkMemoryPropertyFlags 
 
 	for (uint32_t i = 0; i < memProperties.memoryTypeCount; i++)
 	{
-		if (typeFilter & (1 << i) && (memProperties.memoryTypes[i].propertyFlags & properties) == properties)
+		if (typeFilter & (1 << i) && (memProperties.memoryTypes[i].propertyFlags & properties) == 0)
 		{
 			return i;
 		}
