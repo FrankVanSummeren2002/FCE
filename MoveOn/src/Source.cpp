@@ -26,7 +26,7 @@
 
 #include "Core/Input.h"
 
-#include "AStar.h"
+#include "Astar/AStar.h"
 entt::entity AstarTest;
 void DestroyRandomMovement(entt::registry& reg, entt::entity e)
 {

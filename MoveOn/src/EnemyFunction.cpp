@@ -4,7 +4,7 @@
 #include "WeaponComponent.h"
 #include "Components/MovementComponent.h"
 #include "WeaponSystem.h"
-#include "AStar.h"
+#include "Astar/AStar.h"
 #include "Systems/CollisionSystem.h"
 
 void NextPoint(FCE::AStarComponent* comp)

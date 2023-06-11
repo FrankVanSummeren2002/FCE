@@ -30,7 +30,7 @@
 
 #include "Header/VulkanFrontEnd.h"
 
-#include "AStar.h"
+#include "Astar/AStar.h"
 
 entt::entity Player;
 entt::entity Camera;
